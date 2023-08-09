@@ -1,1 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.2;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./hero-img.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  display: inline;
+}
+
+.hero span {
+  font-size: 1rem;
+}
+
+.text {
+  width: 80%;
+  padding-top: 3.2rem;
+  padding-left: 23rem;
+}
+
+.fsd {
+  text-transform: uppercase;
+}
+
+.black-box {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.black-box span {
+  font-size: 4rem;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 1.6rem;
+  justify-content: center;
+  padding: 2rem 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2rem 4rem rgb(0, 0, 0, 0.075);
+  max-width: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.card-img {
+  max-width: 20rem;
+  height: auto;
+}
+
+.card-description {
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.card-description h3 {
+  margin-bottom: 1.6rem;
+}
+
+.me {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact-me {
+  background-color: #4d5f00;
+  width: 33%;
+  height: 10rem;
+  color: #fff;
+}
+
+.about-me {
+  background-color: #761c00;
+  width: 33%;
+  height: 10rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
