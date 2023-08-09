@@ -22,10 +22,11 @@ body {
   background-size: cover;
   background-position: center;
   color: #fff;
+  padding: 10rem 42rem;
 }
 
 .hero h1 {
-  font-size: 3.2rem;
+  font-size: 4rem;
   display: inline;
 }
 
@@ -33,11 +34,11 @@ body {
   font-size: 1rem;
 }
 
-.text {
+/* .text {
   width: 80%;
-  padding-top: 3.2rem;
-  padding-left: 23rem;
-}
+  padding-top: 10rem;
+  padding-left: 44rem;
+} */
 
 .fsd {
   text-transform: uppercase;
@@ -49,12 +50,16 @@ body {
   background-color: #000;
   color: #fff;
   text-transform: uppercase;
-  font-size: 3.2rem;
   text-align: center;
 }
 
-.black-box span {
+.black-box h1 {
   font-size: 4rem;
+  display: inline;
+}
+
+.black-box span {
+  font-size: 4.8rem;
 }
 
 .cards {
@@ -111,6 +116,19 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .hero {
+    text-align: center;
+    padding: 2rem 8rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero span {
+    font-size: 1.4rem;
+  }
+
   .cards {
     display: grid;
     grid-template-columns: 1fr;
